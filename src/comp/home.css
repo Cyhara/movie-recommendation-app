@@ -1,0 +1,393 @@
+.main_container {
+    background-image: url('http://localhost:3000/img/banner6.jpeg');
+    height: 900px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main_container .contant {
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 10, 0.5);
+    padding: 20px 30px;
+}
+
+.main_container .contant .detail {
+    margin-top: 10%;
+    padding: 10px 20px;
+}
+
+.main_container .contant .detail .container {
+    margin-top: 250px;
+    background: none;
+}
+
+.main_container .contant .detail .container h2{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main_container .contant .detail .container p {
+    margin-top: 20px;
+    margin-right: 70%;
+    font-size: 18px;
+    color: #c8c8c8;
+}
+
+.main_container  .contant .detail .container .btn {
+    margin-top: 20px;
+    display: flex;
+}
+
+.main_container  .contant .detail .container .btn .play {
+    padding: 5px 15px;
+    color: #c8c8c8;
+    background: #e50914;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+     transition: 0.5s;
+     border: 1px solid #e50914;
+}
+
+.main_container .contant .detail .container .btn .play:hover {
+    color: #e50914;
+    background: none;
+
+}
+
+.main_container  .contant .detail .container .btn .movie_detail {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+.main_container  .contant .detail .container .btn .movie_detail {
+    color: #e50914;
+}
+
+
+.horrormovie {
+    width: 100%;
+    padding: 20px 30px;
+    background: #06121e;
+}
+
+.horrormovie h2 {
+    font-size: 32px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+
+.horrormovie .container .contant {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.horrormovie .container .contant .box {
+    width: 250px;
+    overflow: hidden;
+    height: 400px;
+    margin-top: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.horrormovie .container .contant .box .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.horrormovie .container .contant .box .detail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -150%;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.horrormovie .container .contant .box:hover .detail {
+    background: rgba(10, 10, 10, 0.5);
+    opacity: 1;
+}
+
+.horrormovie .container .contant .box .detail h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.horrormovie .container .contant .box .detail p {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.horrormovie .container .contant .box .detail .rate {
+    display: flex;
+    margin-top: 10px;
+}
+
+.horrormovie .container .contant .box .detail .rate .icon {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.horrormovie .container .contant .box .detail .rate .rate_count p {
+    margin-left: 2px;
+    color: #fff;
+}
+
+.horrormovie .container .contant .box .detail .icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.horrormovie .container .contant .box .detail .icons .play {
+    padding: 10px;
+    background: #e50914;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+}
+
+.horrormovie .container .contant .box .detail .icons .moviedetail {
+    padding: 10px;
+    background: #e50914;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 50px;
+}
+
+
+.trending {
+    padding: 20px 30px;
+    width: 100%;
+    background: #0b1a2a;
+}
+
+.trending h2 {
+    margin-top: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.trending .movie_list {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.trending .movie_list .contant {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+}
+
+
+.trending .movie_list .contant .box {
+    width: 200px;
+    height: 115px;
+    border: 5px;
+    overflow: hidden;
+    /*margin-right: 10px;*/
+    cursor: pointer;;
+}
+
+.trending .movie_list .contant .box .img_box img {
+    width: 100%;
+    height: 90%;
+    object-fit:contain;
+}
+
+.trending_detail {
+    padding: 20px 30px;
+    background: #0b1a2a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.trending_detail .container {
+    display: flex;
+    width: 80%;
+    padding: 20px;
+    background: #06121e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.trending_detail .container .contant {
+    width: 60%;
+    padding: 20px;
+}
+
+.trending_detail .container .contant .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.trending_detail .container .contant .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.trending_detail .container .contant .title h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.trending_detail .container .contant .detail p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.trending_detail .container .contant .rate {
+    display: flex;
+    margin-top: 10px;
+}
+
+.trending_detail .container .contant .rate .icon {
+    color: #ffd700;
+    font-size: 20px;
+}
+
+.trending_detail .container .contant .rate .rate_count p {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.trending_detail .container .contant .lang p,
+.trending_detail .container .contant .release_date p,
+.trending_detail .container .contant .vote p {
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.trending_detail .container .contant .btn {
+    display: flex;
+    margin-top: 20px;
+}
+
+.trending_detail .container .contant .btn .play {
+    padding: 5px 5px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.trending_detail .container .contant .btn .movie_detail {
+    padding: 5px 5px;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+.trending_detail .container .img_box {
+    width: 40%;
+    padding: 20px;
+}
+
+.trending_detail .container .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.trending_detail .container .contant .btn .play:hover, 
+.trending_detail .container .contant .btn .movie_detail:hover {
+    color: #e50914;
+    background: #fff;
+} 
+
+/* Media Queries */
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .main_container {
+    height: 600px;
+  }
+  .main_container .contant .detail {
+    margin-top: 5%;
+  }
+  .horrormovie .container .contant .box {
+    width: 150px;
+    height: 250px;
+  }
+  .trending .movie_list .contant .box {
+    width: 150px;
+    height: 100px;
+  }
+  .trending_detail .container {
+    flex-direction: column;
+  }
+  .trending_detail .container .contant {
+    width: 100%;
+  }
+  .trending_detail .container .img_box {
+    width: 100%;
+  }
+}
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .main_container {
+    height: 400px;
+  }
+  .main_container .contant .detail {
+    margin-top: 2%;
+  }
+  .horrormovie .container .contant .box {
+    width: 100px;
+    height: 150px;
+  }
+  .trending .movie_list .contant .box {
+    width: 100px;
+    height: 80px;
+  }
+  .trending_detail .container .contant .title h2 {
+    font-size: 18px;
+  }
+  .trending_detail .container .contant .detail p {
+    font-size: 14px;
+  }
+}

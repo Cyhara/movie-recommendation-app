@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import Nav from './comp/nav'
+import { BrowserRouter } from 'react-router-dom'
+import Rout from './comp/rout.js'
+import Footer from './comp/footer.js'
 
-function App() {
+const App = () => {
+
+  const [detailData, setDetailData] = useState([])
+  const [detailClose, setDetailClose] = useState(true)
+  const [showDetail, setShowDetail] = useState(false)
+  const detail = (x) => {
+
+    const data = ([{x}])
+    const getdata = data[0]['x']
+    setDetailData(getdata)
+    setShowDetail(true)
+    setDetailClose(true)
+  }
+  const close =() => {
+    setDetailClose(false)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <BrowserRouter>
+     <Nav />
+     <Rout detail={detail} detailData={detailData} close={close} detailClose={detailClose} showDetail={showDetail}/>
+     <Footer />
+    </BrowserRouter>
+      
+    </>
+  )
 }
 
-export default App;
+export default App

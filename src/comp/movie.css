@@ -1,0 +1,161 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.movie_page {
+    padding: 20px 30px;
+    width: 100%;
+    background: #0b1a2a;
+}
+
+.movie_page .movie_search {
+    padding: 10px 20px;
+    max-width: 100%;
+    display: flex;
+}
+
+.movie_page .movie_search input {
+    margin-left: 35%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    width: 300px;
+}
+
+
+.movie_page .movie_search button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #e50914;
+    color: #fff;
+}
+
+.movie_page .search_data {
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 10px 20px;
+}
+
+.movie_page .search_data h2 {
+    color: #fff;
+}
+
+
+.movie_page .search_data .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.movie_page .search_data .container .box {
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.movie_page .search_data .container .box .img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie_page .search_data .container .box .detail {
+    position: relative;
+    margin-top: -200px;
+   padding: 10px 20px;
+    background: rgba(10, 10, 10, 0.5);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.movie_page .search_data .container .box:hover .detail {
+    opacity: 1;
+}
+
+.movie_page .search_data .container .box .detail h2 {
+    color: #fff;
+}
+
+.movie_page .search_data .container .box .detail p {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.movie_page .search_data .container .box .detail .rate {
+    display: flex;
+    margin-top: 5px;
+}
+
+.movie_page .search_data .container .box .detail .rate .rate_icon {
+    color: #fff;
+    margin-top: 5px;
+}
+
+.movie_page .search_data .container .box .detail .btn {
+    display: flex;
+}
+
+.movie_page .search_data .container .box .detail .btn .play {
+    padding: 10px 10px;
+    background: #e50914;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.movie_page .search_data .container .box .detail .btn .movie_about {
+    padding: 10px 10px;
+    background: #e50914;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .movie_page .movie_search input {
+    width: 200px;
+    margin-left: 20%;
+  }
+  .movie_page .search_data .container .box {
+    width: 200px;
+    height: 300px;
+  }
+  .movie_page .search_data .container .box .detail {
+    margin-top: -150px;
+  }
+}
+
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .movie_page .movie_search input {
+    width: 150px;
+    margin-left: 10%;
+  }
+  .movie_page .search_data .container .box {
+    width: 150px;
+    height: 250px;
+  }
+  .movie_page .search_data .container .box .detail {
+    margin-top: -100px;
+  }
+  .movie_page .search_data .container .box .detail .btn {
+    flex-direction: column;
+  }
+  .movie_page .search_data .container .box .detail .btn .play {
+    margin-bottom: 10px;
+  }
+}

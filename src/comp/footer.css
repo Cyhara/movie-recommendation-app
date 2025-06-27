@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+  background-color: #0b1a2a;;
+  color: #fff;
+  padding: 40px 20px;
+  /*text-align: center;*/
+}
+
+.container .contant {
+    max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container .contant .vidstream {
+  flex-basis: 40%;
+}
+
+.container .contant .vidstream .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.container .contant .vidstream p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.container .contant .vidstream .icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.container .contant .vidstream .icon i {
+  font-size: 18px;
+  padding: 10px 10px;
+  color: #06121e;
+  background-color: #fff;
+  margin-left: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.container .contant .quick_link h3 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e50914;
+}
+
+.container .contant .quick_link li {
+  list-style: none;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.container .contant .quick_link li .link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container .contant .subscribe {
+  flex-basis: 20%;
+  width: 33%;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.container .contant .subscribe h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container .contant .subscribe p {
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.container .contant .subscribe input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  background-color: #444;
+  color: #fff;
+}
+
+.container .contant .subscribe button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.container .contant .subscribe button[type="submit"]:hover {
+  background-color: #888;
+}
+
+/* Media Queries */
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  .container .contant {
+    flex-direction: column;
+  }
+  .container .contant .vidstream {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .container .contant .quick_link {
+    margin-top: 20px;
+  }
+  .container .contant .subscribe {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+}
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  .container .contant .vidstream .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  .container .contant .vidstream p {
+    font-size: 14px;
+  }
+  .container .contant .quick_link h3 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,141 @@
+.header_container {
+    background: #06121e;
+    padding: 10px 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_container .contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header_container .contant .logo {
+    width: 100px;
+    height: 20px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.header_container .contant .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_container .contant ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header_container .contant ul li {
+    margin-right: 20px;
+}
+
+.header_container .contant ul li .link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.header_container .contant ul li .link:hover {
+    color: #e50914;
+}
+
+.header_container .contant .auth {
+    display: flex;
+    align-items: center;
+}
+
+.header_container .contant .auth .login,
+.header_container .contant .auth .logout {
+    display: flex;
+    align-items: center;
+}
+
+.header_container .contant .auth .login .login_logo,
+.header_container .contant .auth .logout .logout_logo {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.header_container .contant .auth button {
+    background: #e50914;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_container .contant .user {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.header_container .contant .user .user_name_logo {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.header_container .contant .user .user_details p {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Media Queries */
+
+
+/* For screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .header_container {
+    padding: 10px;
+  }
+  .header_container .contant ul {
+    margin-left: 10px;
+  }
+  .header_container .contant ul li {
+    margin-right: 10px;
+  }
+  .header_container .contant .auth {
+    margin-left: 10px;
+  }
+  .header_container .contant .user {
+    margin-left: 10px;
+  }
+}
+
+
+/* For screens with a maximum width of 480px */
+@media (max-width: 480px) {
+  .header_container {
+    padding: 5px;
+  }
+  .header_container .contant {
+    flex-direction: column;
+  }
+  .header_container .contant .logo {
+    margin-bottom: 10px;
+  }
+  .header_container .contant ul {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .header_container .contant ul li {
+    margin-bottom: 10px;
+  }
+  .header_container .contant .auth {
+    margin-top: 10px;
+  }
+  .header_container .contant .user {
+    margin-top: 10px;
+  }
+}
