@@ -327,6 +327,58 @@
   background: #fff;
 }
 
+/* Media Queries */
+
+
+/* Large Desktop Devices */
+@media (min-width: 1500px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6.jpeg');
+    background-size: 100% 600px;
+    background-position: center;
+  }
+}
+
+
+/* Desktop Devices */
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6.jpeg');
+    background-size: 100% 500px;
+    background-position: center;
+  }
+}
+
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6.jpeg');
+    background-size: 100% 400px;
+    background-position: center;
+  }
+}
+
+
+/* Mobile Devices */
+@media (min-width: 480px) and (max-width: 767px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6.jpeg');
+    background-size: 100% 300px;
+    background-position: center;
+  }
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 479px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6.jpeg');
+    background-size: 100% 200px;
+    background-position: center;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .main_container {
     height: 100vh;

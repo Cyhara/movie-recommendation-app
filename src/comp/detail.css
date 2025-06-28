@@ -69,35 +69,101 @@
 
 /* Media Queries */
 
-/* For screens with a maximum width of 768px */
-@media (max-width: 768px) {
+
+/* Large Desktop Devices */
+@media (min-width: 1500px) {
   .detail_page {
-    width: 100%;
-    height: 100vh;
-    margin-left: 0;
-    padding: 20px;
-  }
-  .detail_page .container {
-    flex-direction: column;
+    width: 1200px;
+    height: 600px;
   }
   .detail_page .container .img_box img {
-    width: 100%;
-    height: 200px;
+    width: 300px;
+    height: 500px;
   }
-  .detail_page .info {
-    margin-left: 0;
+  .detail_page .info h2 {
+    font-size: 40px;
+  }
+  .detail_page .info p {
+    font-size: 18px;
   }
 }
 
-/* For screens with a maximum width of 480px */
-@media (max-width: 480px) {
+
+/* Desktop Devices */
+@media (min-width: 1200px) and (max-width: 1499px) {
   .detail_page {
-    padding: 10px;
+    width: 1000px;
+    height: 500px;
+  }
+  .detail_page .container .img_box img {
+    width: 250px;
+    height: 400px;
+  }
+  .detail_page .info h2 {
+    font-size: 32px;
+  }
+  .detail_page .info p {
+    font-size: 16px;
+  }
+}
+
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .detail_page {
+    width: 800px;
+    height: 400px;
+    margin-left: 10%;
+  }
+  .detail_page .container .img_box img {
+    width: 200px;
+    height: 300px;
   }
   .detail_page .info h2 {
     font-size: 24px;
   }
   .detail_page .info p {
-    font-size: 16px;
+    font-size: 14px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (min-width: 480px) and (max-width: 767px) {
+  .detail_page {
+    width: 600px;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .detail_page .container .img_box img {
+    width: 150px;
+    height: 200px;
+  }
+  .detail_page .info h2 {
+    font-size: 18px;
+  }
+  .detail_page .info p {
+    font-size: 12px;
+  }
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 479px) {
+  .detail_page {
+    width: 100%;
+    height: 200px;
+    margin-left: 0;
+    padding: 10px;
+  }
+  .detail_page .container .img_box img {
+    width: 100px;
+    height: 150px;
+  }
+  .detail_page .info h2 {
+    font-size: 14px;
+  }
+  .detail_page .info p {
+    font-size: 10px;
   }
 }
