@@ -1,9 +1,6 @@
 .main_container {
     background-image: url('http://localhost:3000/img/banner6.jpeg');
-    height: 900px;
-    width: 100%;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -365,6 +362,36 @@
   }
   .trending_detail .container .img_box {
     width: 100%;
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6-tablet.jpeg');
+    height: 80vh;
+  }
+}
+
+/* Phones (portrait and landscape) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6-mobile.jpeg');
+    height: 60vh;
+  }
+}
+
+/* Small laptops and desktops */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6-laptop.jpeg');
+  }
+}
+
+/* Large desktops */
+@media only screen and (min-width: 1281px) {
+  .main_container {
+    background-image: url('http://localhost:3000/img/banner6-desktop.jpeg');
   }
 }
 
