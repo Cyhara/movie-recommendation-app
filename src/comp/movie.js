@@ -54,7 +54,7 @@ const Movie = () => {
                         searchMovie.map((curElm) => {
                             return(
                                 <>
-                                <div className='box'>
+                                <div key={curElm.id} className='box'>
                                     <div className='img_box'>
                                         {curElm.poster_path && (
                                             <img src={`https://image.tmdb.org/t/p/original/${curElm.poster_path}`} alt=''></img>

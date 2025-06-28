@@ -1,0 +1,37 @@
+.settings-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-container h1 {
+  margin-top: 0;
+}
+
+.settings-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.settings-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.settings-container button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.settings-container button[type="submit"]:hover {
+  background-color: #3e8e41;
+}

@@ -8,6 +8,11 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const Nav = () => {
     const { loginWithRedirect, logout, user, isAuthenticated } = useAuth0();
+    const [showDropdown, setShowDropdown] = React.useState(false);
+
+    const handleDropdown = () => {
+        setShowDropdown(!showDropdown);
+    }
   return (
     <>
     <div className='header_container'>
@@ -43,14 +48,28 @@ const Nav = () => {
             </div>
             {
                 isAuthenticated && (
-                  <div className='user'>
-                <div className='user_name_logo'>
+            <div className='user'>
+                <div className='user_name_logo' onClick={handleDropdown}>
                 <BiUserCircle />
+                <span>{ user.name }</span>
+                {showDropdown && (
+                    <div className='dropdown'>
+                        <p>Hello, { user.name }</p>
+                        <Link to='/profile'>
+                        <i className="fa fa-user" aria-hidden="true"></i> View Profile
+                        </Link>
+                        <Link to='/change-password'>
+                        <i className="fa fa-lock" aria-hidden="true"></i> Change Password
+                        </Link>
+                        <Link to='/settings'>
+                        <i className="fa fa-cog" aria-hidden="true"></i> Settings
+                        </Link>
+                        <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin }})}>Logout</button>
+                        
+                    </div>
+                )}
+                </div> 
             </div>  
-                <div className='user_details'>
-                    <p>Hello, { user.name }</p>
-                </div>  
-                </div>
                 )
             }  
         </div>

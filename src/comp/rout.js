@@ -7,6 +7,10 @@ import About from './about.js';
 import Contact from './contact.js';
 import FilterMovies from './filter.js';
 import FavoriteMovies from './favorite.js';
+import ChangePassword from './changePassword.js';
+import Settings from './settings.js';
+import Profile from './profile.js';
+
 
 const Rout = ({detail, detailData, close, detailClose, showDetail}) => {
   return (
@@ -18,6 +22,10 @@ const Rout = ({detail, detailData, close, detailClose, showDetail}) => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/filter_movies" element={<FilterMovies />} />
       <Route path="/favorite_movies" element={<FavoriteMovies />} />
+      <Route path="/change_password" element={<ChangePassword />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/profile" element={<Profile />} />
+
     </Routes>
   );
 };
