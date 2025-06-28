@@ -1,0 +1,30 @@
+/* Global styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  /* Mobile styles */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* Tablet styles */
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* Desktop styles */
+  body {
+    font-size: 20px;
+  }
+}
