@@ -124,7 +124,7 @@
 
 
 /* For screens with a maximum width of 768px */
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .movie_page .movie_search input {
     width: 200px;
     margin-left: 20%;

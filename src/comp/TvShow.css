@@ -50,3 +50,91 @@
 .TVShows .container .tvShow p {
   color: #666;
 }
+
+/* Media Queries */
+
+
+/* Large Desktop Devices */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .TVShows .container .tvShow {
+    width: calc(20% - 40px);
+  }
+  .TVShows .container .tvShow img {
+    height: 300px;
+  }
+  .TVShows .container .tvShow h3 {
+    font-size: 18px;
+  }
+  .TVShows .container .tvShow p {
+    font-size: 16px;
+  }
+}
+
+
+/* Desktop Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .TVShows .container .tvShow {
+    width: calc(25% - 40px);
+  }
+  .TVShows .container .tvShow img {
+    height: 250px;
+  }
+  .TVShows .container .tvShow h3 {
+    font-size: 16px;
+  }
+  .TVShows .container .tvShow p {
+    font-size: 14px;
+  }
+}
+
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .TVShows .container .tvShow {
+    width: calc(33.33% - 40px);
+  }
+  .TVShows .container .tvShow img {
+    height: 200px;
+  }
+  .TVShows .container .tvShow h3 {
+    font-size: 14px;
+  }
+  .TVShows .container .tvShow p {
+    font-size: 12px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (min-width: 480px) and (max-width: 767px) {
+  .TVShows .container .tvShow {
+    width: calc(50% - 40px);
+  }
+  .TVShows .container .tvShow img {
+    height: 150px;
+  }
+  .TVShows .container .tvShow h3 {
+    font-size: 12px;
+  }
+  .TVShows .container .tvShow p {
+    font-size: 10px;
+  }
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 479px) {
+  .TVShows .container .tvShow {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .TVShows .container .tvShow img {
+    height: 100px;
+  }
+  .TVShows .container .tvShow h3 {
+    font-size: 10px;
+  }
+  .TVShows .container .tvShow p {
+    font-size: 8px;
+  }
+}

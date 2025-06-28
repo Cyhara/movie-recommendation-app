@@ -55,3 +55,91 @@
 .my-favorite .movie-list .movie-card .movie-info button:hover {
     background-color: #ffa07a;
 }
+
+/* Media Queries */
+
+
+/* Large Desktop Devices */
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .my-favorite .movie-list .movie-card {
+    width: calc(20% - 20px);
+  }
+  .my-favorite .movie-list .movie-card img {
+    height: 250px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info h3 {
+    font-size: 20px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info p {
+    font-size: 18px;
+  }
+}
+
+
+/* Desktop Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .my-favorite .movie-list .movie-card {
+    width: calc(25% - 20px);
+  }
+  .my-favorite .movie-list .movie-card img {
+    height: 200px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info h3 {
+    font-size: 18px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info p {
+    font-size: 16px;
+  }
+}
+
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .my-favorite .movie-list .movie-card {
+    width: calc(33.33% - 20px);
+  }
+  .my-favorite .movie-list .movie-card img {
+    height: 150px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info h3 {
+    font-size: 16px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info p {
+    font-size: 14px;
+  }
+}
+
+
+/* Mobile Devices */
+@media (min-width: 480px) and (max-width: 767px) {
+  .my-favorite .movie-list .movie-card {
+    width: calc(50% - 20px);
+  }
+  .my-favorite .movie-list .movie-card img {
+    height: 100px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info h3 {
+    font-size: 14px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info p {
+    font-size: 12px;
+  }
+}
+
+
+/* Small Mobile Devices */
+@media (max-width: 479px) {
+  .my-favorite .movie-list .movie-card {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .my-favorite .movie-list .movie-card img {
+    height: 80px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info h3 {
+    font-size: 12px;
+  }
+  .my-favorite .movie-list .movie-card .movie-info p {
+    font-size: 10px;
+  }
+}
