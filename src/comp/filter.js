@@ -9,7 +9,7 @@ const FilterMovies = () => {
 
   const fetchMovies = async () => {
     try {
-      const api_url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=2`;
+      const api_url = `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=16`;
       const response = await fetch(api_url);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

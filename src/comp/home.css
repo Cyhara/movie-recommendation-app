@@ -1,8 +1,4 @@
-.main_container {
-  background-image: url('http://localhost:3000/img/banner6.jpeg');
-  background-size: cover;
-  background-position: center;
-}
+
 
 .main_container .contant {
   width: 100%;
@@ -333,7 +329,6 @@
 /* Large Desktop Devices */
 @media (min-width: 1500px) {
   .main_container {
-    background-image: url('http://localhost:3000/img/banner6.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -343,7 +338,6 @@
 /* Desktop Devices */
 @media (min-width: 1200px) and (max-width: 1499px) {
   .main_container {
-    background-image: url('http://localhost:3000/img/banner6.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -353,7 +347,6 @@
 /* Tablet Devices */
 @media (min-width: 768px) and (max-width: 1199px) {
   .main_container {
-    background-image: url('http://localhost:3000/img/banner6.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -363,7 +356,6 @@
 /* Mobile Devices */
 @media (min-width: 480px) and (max-width: 767px) {
   .main_container {
-    background-image: url('http://localhost:3000/img/banner6.jpeg');
     background-size: cover;
     background-position: center;
   }
@@ -373,7 +365,6 @@
 /* Small Mobile Devices */
 @media (max-width: 479px) {
   .main_container {
-    background-image: url('http://localhost:3000/img/banner6.jpeg');
     background-size: cover;
     background-position: center;
   }

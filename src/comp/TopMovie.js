@@ -9,7 +9,7 @@ const Top_Movie = () => {
 
   const fetchMovies = async () => {
     try {
-      const api_url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`;
+      const api_url = `https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=113`;
       
       const response = await fetch(api_url);
       if (!response.ok) {
@@ -44,7 +44,7 @@ const Top_Movie = () => {
                 <div className='box' key={movie.id}>
                     <div className='img_box'>
                     <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-                  </div>
+                    </div>
                   <h3>{movie.title}</h3>
                   <p>Rating: {movie.vote_average}</p>
                 </div>

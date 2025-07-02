@@ -24,7 +24,7 @@ const MyFavorite = () => {
                             Authorization: `Bearer ${apiKey}`
                         }
                     };
-                    const response = await fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}&language=en-US`, options);
+                    const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&include_adult=false&with_origin_country=IN`, options);
                     const data = await response.json();
                     setFavoriteMovies(data.results);
                 } else {

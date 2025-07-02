@@ -17,7 +17,7 @@ const Home = ({detail, detailData, close, detailClose, showDetail}) => {
     useEffect(() => {
         const fetchTrendingMovies = async () => {
             try {
-                const response = await fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${apiKey}`);
+                const response = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&sort_by=trending.desc&with_origin_country=KR&with_genres=28`);
                 const data = await response.json();
                 setTrendingData(data.results);
             } catch (error) {
@@ -53,7 +53,7 @@ const Home = ({detail, detailData, close, detailClose, showDetail}) => {
                 :
                 null
             }
-            <div className='main_container'>
+            <div className='main_container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/banner6.jpeg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <div className='contant'>
                     <div className='detail'>
                         <div className='container'>
