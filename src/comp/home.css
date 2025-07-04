@@ -1,4 +1,7 @@
-
+.main_container {
+  background-size: cover;
+  background-position: center;
+}
 
 .main_container .contant {
   width: 100%;
