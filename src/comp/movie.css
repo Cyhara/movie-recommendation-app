@@ -69,8 +69,8 @@
 
 .movie_page .search_data .container .box .detail {
     position: relative;
-    margin-top: -200px;
-   padding: 10px 20px;
+    margin-top: -250px;
+    padding: 10px 20px;
     background: rgba(10, 10, 10, 0.5);
     opacity: 0;
     transition: 0.5s;
@@ -82,11 +82,13 @@
 
 .movie_page .search_data .container .box .detail h2 {
     color: #fff;
+    font-size: 15px;
 }
 
 .movie_page .search_data .container .box .detail p {
     color: #fff;
     margin-top: 5px;
+    font-size: 15px;
 }
 
 .movie_page .search_data .container .box .detail .rate {
