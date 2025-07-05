@@ -527,3 +527,39 @@
     padding: 10px;
   }
 }
+@media only screen and (max-width: 393px) and (orientation: portrait) {
+  .main_container {
+    height: auto;
+    width: 100w;
+  }
+  .main_container .contant {
+    padding: 10px;
+  }
+  .horrormovie .container .contant {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .horrormovie .container .contant .box {
+    margin: 10px;
+    width: 100%;
+  }
+  .trending .movie_list .contant {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .trending .movie_list .contant .box {
+    margin: 10px;
+    width: 100%;
+  }
+  .trending_detail .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .trending_detail .container .contant {
+    width: 100%;
+  }
+  .trending_detail .container .img_box {
+    width: 100%;
+    padding: 10px;
+  }
+}
