@@ -1,6 +1,5 @@
 .main_container {
-  background-size: cover;
-  background-position: center;
+  height: auto;
 }
 
 .main_container .contant {
@@ -332,7 +331,7 @@
 /* Large Desktop Devices */
 @media (min-width: 1500px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
 }
@@ -341,7 +340,7 @@
 /* Desktop Devices */
 @media (min-width: 1200px) and (max-width: 1499px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
 }
@@ -350,7 +349,7 @@
 /* Tablet Devices */
 @media (min-width: 768px) and (max-width: 1199px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
 }
@@ -359,7 +358,7 @@
 /* Mobile Devices */
 @media (min-width: 480px) and (max-width: 767px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
 }
@@ -368,14 +367,14 @@
 /* Small Mobile Devices */
 @media (max-width: 479px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
   .horrormovie .container .contant {
@@ -393,7 +392,7 @@
 /* Large Tablet Devices */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
   .horrormovie .container .contant {
@@ -419,7 +418,7 @@
 /* Medium Tablet Devices */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
   .horrormovie .container .contant {
@@ -455,7 +454,7 @@
 /* Small Tablet and Mobile Devices */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
   .main_container .contant {
@@ -494,7 +493,7 @@
 /* Mobile Devices */
 @media only screen and (max-width: 575px) {
   .main_container {
-    height: 100vh;
+    height: auto;
     width: 100w;
   }
   .main_container .contant {

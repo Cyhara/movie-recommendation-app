@@ -24,8 +24,8 @@
 }
 
 .my-favorite .movie-list .movie-card img {
-    width: 100%;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -65,7 +65,8 @@
     width: calc(20% - 20px);
   }
   .my-favorite .movie-list .movie-card img {
-    height: 250px;
+    max-width: 100%;
+    height: auto;
   }
   .my-favorite .movie-list .movie-card .movie-info h3 {
     font-size: 20px;
@@ -82,7 +83,8 @@
     width: calc(25% - 20px);
   }
   .my-favorite .movie-list .movie-card img {
-    height: 200px;
+    max-width: 100%;
+    height: auto;
   }
   .my-favorite .movie-list .movie-card .movie-info h3 {
     font-size: 18px;
@@ -99,7 +101,8 @@
     width: calc(33.33% - 20px);
   }
   .my-favorite .movie-list .movie-card img {
-    height: 150px;
+    max-width: 100%;
+    height: auto;
   }
   .my-favorite .movie-list .movie-card .movie-info h3 {
     font-size: 16px;
@@ -116,7 +119,8 @@
     width: calc(50% - 20px);
   }
   .my-favorite .movie-list .movie-card img {
-    height: 100px;
+    max-width: 100%;
+    height: auto;
   }
   .my-favorite .movie-list .movie-card .movie-info h3 {
     font-size: 14px;
@@ -134,7 +138,8 @@
     margin: 20px 0;
   }
   .my-favorite .movie-list .movie-card img {
-    height: 80px;
+    max-width: 100%;
+    height: auto;
   }
   .my-favorite .movie-list .movie-card .movie-info h3 {
     font-size: 12px;
