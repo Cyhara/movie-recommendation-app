@@ -332,8 +332,8 @@
 /* Large Desktop Devices */
 @media (min-width: 1500px) {
   .main_container {
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    width: 100w;
   }
 }
 
@@ -341,8 +341,8 @@
 /* Desktop Devices */
 @media (min-width: 1200px) and (max-width: 1499px) {
   .main_container {
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    width: 100w;
   }
 }
 
@@ -350,8 +350,8 @@
 /* Tablet Devices */
 @media (min-width: 768px) and (max-width: 1199px) {
   .main_container {
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    width: 100w;
   }
 }
 
@@ -359,8 +359,8 @@
 /* Mobile Devices */
 @media (min-width: 480px) and (max-width: 767px) {
   .main_container {
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    width: 100w;
   }
 }
 
@@ -368,14 +368,15 @@
 /* Small Mobile Devices */
 @media (max-width: 479px) {
   .main_container {
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
+    width: 100w;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .main_container {
     height: 100vh;
+    width: 100w;
   }
   .horrormovie .container .contant {
     justify-content: space-between;
@@ -393,6 +394,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main_container {
     height: 100vh;
+    width: 100w;
   }
   .horrormovie .container .contant {
     flex-wrap: wrap;
@@ -418,6 +420,7 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main_container {
     height: 100vh;
+    width: 100w;
   }
   .horrormovie .container .contant {
     flex-wrap: wrap;
@@ -453,6 +456,7 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .main_container {
     height: 100vh;
+    width: 100w;
   }
   .main_container .contant {
     padding: 10px;
@@ -491,6 +495,7 @@
 @media only screen and (max-width: 575px) {
   .main_container {
     height: 100vh;
+    width: 100w;
   }
   .main_container .contant {
     padding: 10px;

@@ -53,7 +53,7 @@ const Home = ({detail, detailData, close, detailClose, showDetail}) => {
                 :
                 null
             }
-            <div className='main_container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/banner6.jpeg)` }}>
+            <div className='main_container' style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/img/banner6.jpeg)`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <div className='contant'>
                     <div className='detail'>
                         <div className='container'>
