@@ -3,6 +3,7 @@ import Nav from './comp/nav'
 import { BrowserRouter } from 'react-router-dom'
 import Rout from './comp/rout.js'
 import Footer from './comp/footer.js'
+import Chatbot from './comp/Chatbot.js'
 
 const App = () => {
 
@@ -26,6 +27,7 @@ const App = () => {
      <Nav />
      <Rout detail={detail} detailData={detailData} close={close} detailClose={detailClose} showDetail={showDetail}/>
      <Footer />
+     <Chatbot />
     </BrowserRouter>
       
     </>
