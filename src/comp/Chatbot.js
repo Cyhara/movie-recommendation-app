@@ -197,7 +197,7 @@ const Chatbot = () => {
             <h2>Welcome to the Movie Chatbot!</h2>
             <p>Type a movie title or keyword to get started.</p>
           </div>
-          <ul className="chatbot-log" style={{ listStyle: "none", padding: "0", margin: "0", overflowY: "scroll", height: "250px" }}>
+          <ul className="chatbot-log">
             {chatLog.map((curElm, index) => (
               <li key={index}>
                 <strong>{curElm.sender}:</strong> {curElm.message}
@@ -264,7 +264,7 @@ const Chatbot = () => {
                         {result.poster_path && (
                           <img src={`https://image.tmdb.org/t/p/w200${result.poster_path}`} alt={result.title || result.name} />
                         )}
-                        <p style={{ fontSize: "14px" }}>{result.overview}</p>
+                        <p>{result.overview}</p>
                       </li>
                     ))}
                   </ul>
