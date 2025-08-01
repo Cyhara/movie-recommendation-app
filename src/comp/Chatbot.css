@@ -158,6 +158,20 @@ form {
   border-top: 1px solid #ddd;
 }
 
+
+.chatbot-log::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chatbot-log::-webkit-scrollbar-thumb {
+  background-color: #4CAF50;
+  border-radius: 10px;
+}
+
+.chatbot-log::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -167,15 +181,102 @@ form {
   }
 }
 
-@media (max-width: 768px) {
+/* Desktop devices */
+@media only screen and (min-width: 992px) {
+  .chatbot-container {
+    width: 300px;
+    height: 400px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+  }
+  .chatbot-toggle-button {
+    position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out;
+  }
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .chatbot-container {
+    width: 250px;
+    height: 350px;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+  }
+  .chatbot-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 767px) {
   .chatbot-container {
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: 0;
-    right: 0;
     bottom: 0;
-    left: 0;
+    right: 0;
     border-radius: 0;
+  }
+  .chatbot-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+/* Small mobile devices */
+@media only screen and (max-width: 480px) {
+  .chatbot-container {
+    padding: 10px;
+  }
+  .chatbot-log {
+    font-size: 14px;
+  }
+  .chatbot-toggle-button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Extra small mobile devices */
+@media only screen and (max-width: 320px) {
+  .chatbot-container {
+    padding: 5px;
+  }
+  .chatbot-log {
+    font-size: 12px;
+  }
+  .chatbot-toggle-button {
+    padding: 5px;
+    font-size: 12px;
   }
 }
